@@ -1,67 +1,125 @@
 header {
-  height: 45vh;
   width: 100%;
-  background-color: #414141;
-  background-position: center center;
-  background-size: cover;
+  background-color: var(--BaseGray);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 150rem;
 }
 
-nav {
+.seccion2-Navbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 75rem;
 }
 
-nav ul li {
+.seccion2-Navbar ul li {
   list-style: none;
   display: inline-block;
-  padding: 1.9vh;
+  padding: 20rem;
 }
 
-nav ul li a {
+.seccion2-Navbar ul li a {
   text-decoration: none;
   font-weight: 400;
-  color: white;
+  color: var(--BaseTone);
   vertical-align: middle;
-  font-size: 1.9vh;
+  font-size: 15rem;
+}
+
+.seccion2-Navbar ul li a:hover {
+  color: var(--LighterGray);
+  transition: all 100ms;
 }
 
 .logo-Navbar {
-  width: 12vh;
-}
-
-.lowerDetails-Navbar {
-  padding-top: calc(45vh - 10vh - 12vh - 12vh);
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  
-}
-
-.title-Navbar {
-  margin-left: 7vh;
-  width: auto;
-  color: white;
-  font-size: 15vh;
-  text-transform: uppercase;
-  
+  width: 60rem;
 }
 
 .usericon-Navbar {
-  color: white;
-  font-size: 5vh;
-  
+  color: var(--BaseTone);
+  font-size: 25rem;
+  margin-left: 10rem;
+}
+
+.menuicon-Navbar {
+  color: var(--BaseTone);
+  font-size: 25rem;
+  cursor: pointer;
 }
 
 .userDetails-Navbar {
   display: flex;
-  margin-right: 8.5vh;
   align-items: center;
 }
 
 .userDetails-Navbar p {
-  color: white;
-  font-size: 2.3vh;
-  margin-left: 1.5vh;
+  color: var(--BaseTone);
+  font-size: 13rem;
   text-transform: uppercase;
+}
+
+.logotitle-Navbar{
+  display: none;
+}
+
+#icon{
+  display: none;
+}
+
+@media only screen and (min-width: 1400px){
+  
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    padding: 0 75rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  
+  header {
+    padding: 0 30rem;
+  }
+  
+  #icon {
+    display: block;
+    margin-left: 10rem;
+  }
+
+  .userDetails-Navbar p {
+    display: none;
+  }
+
+  .seccion2-Navbar ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: var(--BaseGray);
+    top: 75rem;
+    right:0;
+    transform: translateX(100%);
+    transition: all .5s;
+    text-align: center;
+    
+  }
+
+  .navbarlist.open{
+    transform: translateX(0);  
+    position: absolute;  
+    z-index: 100000000;
+  }
+
+  .seccion2-Navbar li{
+    display: block;
+    line-height: 30rem;
+  }
+
+  .logotitle-Navbar{
+    display: block;
+    color: var(--BaseTone);
+    margin: 0rem 10rem;
+  }
 }

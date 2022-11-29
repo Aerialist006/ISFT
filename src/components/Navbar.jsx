@@ -1,13 +1,19 @@
 import "../css/Navbar.css";
+import React, { useState } from "react";
 import logo from "../logoseminario1.png";
-import { FaUserCircle } from "react-icons/fa";
+import { FaUserCircle, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export function Navbar(props) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header>
-      <nav>
-        <ul>
+      <div className="seccion2-Navbar">
+        <Link to="/">
+          <img src={logo} alt="Logo" className="logo-Navbar" />
+        </Link>
+        <h1 className="logotitle-Navbar">ISFT</h1>
+        <ul className={`navbarlist ${isOpen && "open"}`}>
           <li>
             <Link to="/pensum">PENSUM</Link>
           </li>
@@ -18,27 +24,22 @@ export function Navbar(props) {
             <Link to="/nosotros">NOSOTROS</Link>
           </li>
           <li>
-            <Link to="/">
-              <img src={logo} alt="" className="logo-Navbar" />
-            </Link>
-          </li>
-          <li>
             <Link to="/notas">NOTAS</Link>
           </li>
           <li>
             <Link to="/admisiones">ADMISIONES</Link>
           </li>
-          <li>
-            <Link to="/login">LOGIN</Link>
-          </li>
         </ul>
-      </nav>
-      <div className="lowerDetails-Navbar">
-        <p className="title-Navbar">{props.name}</p>
-        <div className="userDetails-Navbar">
-          <FaUserCircle className="usericon-Navbar" />
-          <p>{props.user}</p>
-        </div>
+      </div>
+
+      <div className="userDetails-Navbar">
+        <p>{props.user}</p>
+        <FaUserCircle className="usericon-Navbar" />
+        <FaBars
+          id="icon"
+          className={`menuicon-Navbar ${isOpen && "open"}` }
+          onClick={() => setIsOpen(!isOpen)}
+        />
       </div>
     </header>
   );
