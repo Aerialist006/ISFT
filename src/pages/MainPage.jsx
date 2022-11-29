@@ -8,9 +8,7 @@ const MainPage = ({ Main }) => {
   return (
     <>
       <Navbar name={route} user="Lucas Jair Lopez Tavarez" />
-      <main>
         <Main />
-      </main>
       <Footer />
     </>
   );

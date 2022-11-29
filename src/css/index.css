@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+:root {
+  --BaseGray: #414141;
+  --BaseYellow: #bfa753;
+  --BaseTone: White;
+  --BaseMain: #ebe9e9;
+  --DarkerGray: #272727;
+  --DarkerYellow: #8d7c3e;
+  --DarkerTone: #c5c5c4;
+  --LighterGray: #787877;
+
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +19,18 @@
   font-family: "Roboto";
 }
 
+html {
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 16rem;
+}
+
 .yellow-filter {
   width: 100%;
   height: 100%;
-  background-color: #bfa753;
+  background-color: var(--BaseYellow);
   opacity: 40%;
   position: absolute;
 }
@@ -18,42 +38,59 @@
 .gray-filter {
   width: 100%;
   height: 100%;
-  background-color: #414141;
+  background-color: var(--BaseGray);
   opacity: 40%;
   position: absolute;
 }
 
 .gray-center-text {
-  background-color: #414141;
+  background-color: var(--BaseGray);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 2.01250001rem;
-  height: 50%;
+  font-size: 20rem;
   vertical-align: center;
-  padding: 0px 8.5vh;
+  padding: 0px 40rem;
+  height: 100%;
+  width: 100%;
 }
 
-.news-button{
-  background-color: #bfa753;
+.news-button {
+  background-color: var(--BaseYellow);
   border: none;
   font-weight: 800;
   position: absolute;
   right: 0;
-  font-size: 1.5rem;
-  margin-top: 1vh;
-  margin-right: 7vh;
-  padding: 1rem;
+  margin-top: 30rem;
+  margin-right: 30rem;
+  font-size: 20rem;
+  padding: 10rem;
 }
 
-.news-button:hover{
-  background-color: #8d7c3e;
+.news-button:hover {
+  background-color: var(--DarkerYellow);
   transition: 300ms;
 }
 
 main {
-  padding: 8.2vh;
-  background-color: #ebe9e9;
+  padding: 50rem 150rem;
+  background-color: var(--BaseMain);
+  font-weight: 300;
 }
 
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    padding: 40rem;
+
+  }
+}
+
+@media only screen and (max-width: 700px) {
+}
