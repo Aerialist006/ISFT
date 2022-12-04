@@ -33,11 +33,13 @@ export function Navbar(props) {
       </div>
 
       <div className="userDetails-Navbar">
-        <p>{props.user}</p>
-        <FaUserCircle className="usericon-Navbar" />
+        <Link to="/login" className="Link-Navbar">
+          <p>Iniciar Sesión</p>
+          <FaUserCircle className="usericon-Navbar" />
+        </Link>
         <FaBars
           id="icon"
-          className={`menuicon-Navbar ${isOpen && "open"}` }
+          className={`menuicon-Navbar ${isOpen && "open"}`}
           onClick={() => setIsOpen(!isOpen)}
         />
       </div>

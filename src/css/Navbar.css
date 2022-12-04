@@ -53,10 +53,17 @@ header {
   align-items: center;
 }
 
-.userDetails-Navbar p {
+.Link-Navbar{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.Link-Navbar p {
   color: var(--BaseTone);
   font-size: 13rem;
   text-transform: uppercase;
+
 }
 
 .logotitle-Navbar{
@@ -87,7 +94,7 @@ header {
     margin-left: 10rem;
   }
 
-  .userDetails-Navbar p {
+  .Link-Navbar p {
     display: none;
   }
 
