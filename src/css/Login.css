@@ -1,0 +1,69 @@
+.container-Login {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 450rem;
+  background-color: var(--BaseTone);
+  
+  
+}
+
+.imagen-Login {
+    background-image: url("../img/imagen_news-Home.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.texto-Login{
+    align-items: center;
+    padding: 60rem 40rem;
+}
+
+.texto-Login > p {
+    font-size: 60rem;
+    font-weight: 600;
+    color: var(--DarkerGray);
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.texto-Login form ul p{
+    font-size: 25rem;
+    font-weight: 400;
+    margin: 10rem 0px;
+}
+
+form ul li input{
+    border: none;
+    border-bottom: 0.2rem solid black;
+    padding: 5rem;
+    height: 20rem;
+    font-size: 15rem;
+    outline: none;
+    width: 100%;
+}
+
+button{
+    padding: 8rem 10rem;
+    font-size: 20rem;
+    text-transform: uppercase;
+    background-color: var(--BaseYellow);
+    border: none;
+    color: var(--BaseTone);
+    font-weight: 600;
+}
+
+.links-Login{
+    margin: 40rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-Login .link-Login{
+    color: var(--DarkerYellow);
+    font-weight: 400;
+}
