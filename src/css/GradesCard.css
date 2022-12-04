@@ -1,0 +1,40 @@
+.container-GradesCard {
+  display: flex;
+  flex-direction: column;
+  height: 200rem;
+  background-color: var(--BaseYellow);
+}
+
+.imagen-GradesCard {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  height: 160rem;
+  margin: 5rem;
+  transition: all 300ms;
+}
+
+.container-GradesCard:hover > .imagen-GradesCard {
+  transform: scale(1.03);
+  transition: all 300ms;
+}
+
+.container-GradesCard p {
+  margin: 0 5rem;
+  color: var(--BaseTone);
+  font-size: 20rem;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 1400px) {
+  .container-GradesCard {
+    height: 300rem;
+  }
+  .imagen-GradesCard {
+    height: 230rem;
+  }
+
+  .container-GradesCard p {
+    font-size: 40rem;
+  }
+}
