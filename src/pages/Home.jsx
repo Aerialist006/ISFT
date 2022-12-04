@@ -18,6 +18,7 @@ const Home = () => {
         <div className="imagen_intro-Home" />
       </div>
       <main>
+        
         {/* cards */}
 
         <div className="container_cards-Home">

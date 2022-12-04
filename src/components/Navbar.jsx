@@ -24,7 +24,7 @@ export function Navbar(props) {
             <Link to="/nosotros">NOSOTROS</Link>
           </li>
           <li>
-            <Link to="/notas">NOTAS</Link>
+            <Link to="/notas/vista">NOTAS</Link>
           </li>
           <li>
             <Link to="/admisiones">ADMISIONES</Link>

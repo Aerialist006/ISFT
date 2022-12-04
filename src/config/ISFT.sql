@@ -102,6 +102,7 @@ CREATE TABLE Materias(
 	ID INT PRIMARY KEY auto_increment,
     Cod_Materia CHAR(9),
     Nombre CHAR(60),
+    Descripcion CHAR(256),
     Nivel INT,
     Creditos INT
 );
