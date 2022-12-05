@@ -39,9 +39,9 @@
   font-size: 30rem;
 }
 
-.icon-Footer:hover{
-    color: var(--LighterGray);
-    transition: all 150ms;
+.icon-Footer:hover {
+  color: var(--LighterGray);
+  transition: all 150ms;
 }
 
 .grupo2-Footer {

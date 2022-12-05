@@ -9,7 +9,6 @@
   --DarkerYellow: #8d7c3e;
   --DarkerTone: #c5c5c4;
   --LighterGray: #787877;
-
 }
 
 * {
@@ -33,6 +32,12 @@ body {
   background-color: var(--BaseYellow);
   opacity: 40%;
   position: absolute;
+}
+
+.thin-line {
+  height: 2px;
+  background-color: var(--DarkerGray);
+  margin-bottom: 20rem;
 }
 
 .gray-filter {
@@ -62,10 +67,15 @@ body {
   font-weight: 800;
   position: absolute;
   right: 0;
-  margin-top: 30rem;
-  margin-right: 30rem;
   font-size: 20rem;
   padding: 10rem;
+}
+
+.boton-news-container {
+  height: 100rem;
+  width: 100%;
+  position: relative;
+  padding: 20rem;
 }
 
 .news-button:hover {
@@ -77,9 +87,13 @@ main {
   padding: 50rem 150rem;
   background-color: var(--BaseMain);
   font-weight: 300;
+  min-height: 70vh;
 }
 
 @media only screen and (min-width: 1400px) {
+  main {
+    padding: 50rem 280rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -87,7 +101,12 @@ main {
 
 @media only screen and (max-width: 1000px) {
   main {
-    padding: 40rem;
+    padding: 60rem;
+  }
+
+  .gray-center-text {
+    font-size: 25rem;
+    font-weight: 500;
   }
 }
 

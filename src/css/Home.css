@@ -49,10 +49,10 @@
 }
 .container_cards-Home {
   color: var(--BaseTone);
-  height: 450rem;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 40rem;
+  margin: 40rem 0;
 }
 
 .imagen_cards-Home {
@@ -60,7 +60,6 @@
   height: 100%;
   background-size: cover;
   background-position: center center;
-  position: relative;
   width: 80%;
   margin: 0px 10% 0px 10%;
 }
@@ -95,7 +94,6 @@
   padding: 30rem;
   font-size: 22px;
   text-align: justify;
-  position: relative;
 }
 
 .text_news-Home h2 {
@@ -110,7 +108,7 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  z-index: 0;
+  z-index: 30;
 }
 
 .fixed-title {
@@ -137,6 +135,15 @@
   color: var(--DarkerTone);
   transition: 300ms;
 }
+@media only screen and (min-width: 1400px) {
+  .container_intro-Home {
+    padding: 0 280rem;
+  }
+
+  .container_cards-Home {
+    height: auto;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .container_intro-Home {
@@ -155,12 +162,17 @@
     width: 100%;
     padding: 10px;
   }
+
+  .imagen_cards-Home {
+    height: 300rem;
+    margin-top: 0;
+  }
   .card_icon-Home {
     display: none;
   }
 
   .container_news-Home {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 2fr 3fr;
     height: max-content;
   }
@@ -171,16 +183,20 @@
     padding: 40rem;
   }
 
-  .imagen_news-Home{
+  .imagen_news-Home {
     height: 100%;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   main {
-    font-size: 5.5%;
+    font-size: 14rem;
   }
 
+  .container_cards-Home {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
   .container_intro-Home {
     grid-template-columns: repeat(1, 1fr);
     position: relative;
@@ -205,12 +221,16 @@
     font-size: 10rem;
   }
 
-  .texto_intro-Home h2{
+  .texto_intro-Home h2 {
     font-size: 100rem;
   }
 
-  .text_news-Home{
-    font-size: 15rem;
+  .text_news-Home {
+    font-size: 16rem;
   }
-  
+
+  .imagen_cards-Home {
+    margin: 0;
+    width: auto;
+  }
 }

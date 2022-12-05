@@ -18,7 +18,6 @@ const Home = () => {
         <div className="imagen_intro-Home" />
       </div>
       <main>
-        
         {/* cards */}
 
         <div className="container_cards-Home">
@@ -28,9 +27,7 @@ const Home = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
-          <div className="imagen_cards-Home">
-            <div className="gray-filter" />
-          </div>
+          <div className="imagen_cards-Home"></div>
           <div className="card-Home">
             <div className="gray-center-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
