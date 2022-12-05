@@ -14,7 +14,7 @@ const Login = () => {
           <form action="">
             <ul>
               <li>
-                <p>Codigo</p>
+                <p>Código</p>
                 <input
                   type="text"
                   name="usercode"
@@ -33,8 +33,8 @@ const Login = () => {
               </li>
             </ul>
             <div className="links-Login">
-              <Link to="/register" className="link-Login">No tienes una cuenta? Registrate</Link>
               <button type="submit">Ingresar</button>
+              <Link to="/register" className="link-Login">Has Olvidado tu Contraseña?</Link>
             </div>
           </form>
         </div>
