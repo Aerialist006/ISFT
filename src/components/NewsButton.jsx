@@ -5,7 +5,7 @@ const NewsButton = ({ route }) => {
   return (
     <div className="boton-news-container">
       <div className="news-button">
-        <Link to={route} style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/noticias:1" style={{ textDecoration: "none", color: "white" }}>
           <p>LEER MAS...</p>
         </Link>
       </div>

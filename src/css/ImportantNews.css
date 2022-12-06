@@ -1,0 +1,31 @@
+.container-ImportantNews {
+  display: grid;
+  margin: 20rem 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 3fr;
+  background-color: var(--BaseTone);
+}
+
+.container-ImportantNews:hover {
+  box-shadow: 0.6px 0.6px 10px gray;
+  transition: all 400ms;
+}
+
+.image-ImportantNews {
+  background-position: center center;
+  width: 100%;
+}
+
+.text-ImportantNews {
+  text-align: justify;
+  padding: 10rem;
+  width: 100%;  
+}
+
+.title-ImportantNews {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20rem;
+  margin-bottom: 10rem;
+}
+
