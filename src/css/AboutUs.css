@@ -1,0 +1,130 @@
+.text-AboutUs {
+  background-color: var(--BaseTone);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 60rem;
+}
+
+.image_Container-AboutUs {
+  overflow: hidden;
+}
+
+.image-AboutUs {
+  background-image: url("../img/imagen_news-Home.jpg");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  transition: 500ms;
+}
+
+.history-AboutUs {
+  padding: 60rem 20rem;
+  text-align: justify;
+  font-size: 18rem;
+  overflow: hidden;
+}
+
+.title-AboutUs {
+  font-size: 40rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--DarkerGray);
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+}
+
+.text-AboutUs:hover .image_Container-AboutUs > .image-AboutUs {
+  transform: scale(1.05);
+  transition: 500ms;
+}
+
+.cards-AboutUs {
+  background-color: var(--DarkerGray);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  grid-gap: 3px;
+}
+
+.cardMVV {
+  background-color: var(--BaseMain);
+  padding: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-AboutUs {
+  font-size: 150rem;
+  color: var(--DarkerGray);
+  margin: 15rem;
+  transition: 500ms;
+}
+
+.title_Cards-AboutUs {
+  font-size: 40rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.text_Cards-AboutUs {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.cardMVV:hover > .icon-AboutUs {
+  color: var(--BaseGray);
+  transition: 500ms;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1000px) {
+  .text-AboutUs {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin-bottom: 0;
+  }
+
+  .history-AboutUs {
+    padding: 20rem;
+    text-align: justify;
+    font-size: 14rem;
+  }
+
+  .title-AboutUs {
+    font-size: 28rem;
+  }
+  .cards-AboutUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .cardMVV {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-AboutUs {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cards-AboutUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .cardMVV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

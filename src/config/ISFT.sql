@@ -133,3 +133,8 @@ CREATE TABLE Periodos(
     Nombre CHAR(12) /*Sep-Dic 2022 || Es un combobox seleccionando el mes*/
 )
 
+CREATE TABLE Noticias(
+    ID INT PRIMARY KEY auto_increment,
+    Titulo CHAR(200),
+    
+)

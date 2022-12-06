@@ -16,25 +16,27 @@
 }
 
 .text-NewsView {
+  text-align: justify;
   padding: 20rem;
 }
 
-.title-NewsView{
-    font-weight: 600;
-    font-size: 30rem;
+.title-NewsView {
+  text-align: left;
+  font-weight: 600;
+  font-size: 30rem;
 }
 
 @media only screen and (max-width: 700px) {
-    .container-NewsView{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr 3fr;
-    }
+  .container-NewsView {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 3fr;
+  }
 
-    .image-NewsView{
-        width: 100%;
-    }
+  .image-NewsView {
+    width: 100%;
+  }
 
-    .text-NewsView{
-        width: 100%;
-    }
+  .text-NewsView {
+    width: 100%;
+  }
 }
