@@ -100,11 +100,14 @@ CREATE TABLE Maestros(
 
 CREATE TABLE Materias(
 	ID INT PRIMARY KEY auto_increment,
+    ID_Maestro INT,
     Cod_Materia CHAR(9),
     Nombre CHAR(60),
     Descripcion CHAR(256),
     Nivel INT,
-    Creditos INT
+    Creditos INT,
+    
+    CONSTRAINT FK_Maestros_Mat FOREIGN KEY (ID_Maestro) REFERENCES Maestros(ID)
 );
 
 CREATE TABLE Requisitos(
@@ -115,17 +118,26 @@ CREATE TABLE Requisitos(
     CONSTRAINT FK_Requisitos FOREIGN KEY (Requisitos) REFERENCES Materias(ID)
 );
 
+CREATE TABLE Asuntos{
+    ID INT PRIMARY KEY auto_increment,
+    Nombre CHAR(200),
+    Materia INT
+
+    CONSTRAINT FK_Materia_Asuntos foreign key (Materia) REFERENCES Materias(ID)
+}
+
 CREATE TABLE Calificaciones(
 	ID INT PRIMARY KEY auto_increment,
     ID_Estudiante INT,
-    ID_Maestro INT,
     Materia INT,
     Nota FLOAT,
-    Periodo CHAR(20),
+    Asunto INT
+    Periodo INT,
     
     CONSTRAINT FK_Estudiante_Cal foreign key (ID_Estudiante) REFERENCES Estudiantes(ID),
     CONSTRAINT FK_Maestro_Cal foreign key (ID_Maestro) REFERENCES Maestros(ID),
     CONSTRAINT FK_Materia_Cal FOREIGN KEY (Materia) REFERENCES Materias(ID)
+    CONSTRAINT FK_Periodo_Cal foreign key (Periodo) REFERENCES Periodos(ID)
 );
 
 CREATE TABLE Periodos(
@@ -136,5 +148,7 @@ CREATE TABLE Periodos(
 CREATE TABLE Noticias(
     ID INT PRIMARY KEY auto_increment,
     Titulo CHAR(200),
-    
+    Subtitulo CHAR(200),
+    Contenido MEDIUMTEXT,
+    Imagen LONGBLOB
 )
