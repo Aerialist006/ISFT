@@ -1,14 +1,25 @@
-import React from 'react'
-import "../css/Admisiones.css"
+import React from "react";
+import "../css/Admisiones.css";
+
+const formDataArray = {
+  title: 'Datos Personales',
+  form: '<input placeholder="pene">'
+}
 
 const Admisiones = () => {
   return (
     <main>
+      <div className="container-Admisiones">
         <form action="">
-            
+          <p>{formDataArray.title}</p>
+          {formDataArray.form}
         </form>
-    </main>
-  )
-}
+        <div className="sidedetails-Admisiones">
 
-export default Admisiones
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Admisiones;
